@@ -54,8 +54,6 @@ if __name__=="__main__":
     # optimization
     parser.add_argument('--learning_rate', type=float, default=1, help='starting learning rate')
     parser.add_argument('--learning_rate_decay', type=float, default=0.5, help='learning rate decay')
-    parser.add_argument('--bstitch', type=int, default=0, choices=[0,1]) # 0 --> no back stitch, 1 --> back stitch
-    parser.add_argument('--alpha', type=float, default=0.1, help='scale for backstitch')
     parser.add_argument('--decay_when', type=float, default=1, help='decay if validation perplexity does not improve by more than this much')
     parser.add_argument('--batch_norm', type=int, default=0, help='use batch normalization over input embeddings (1=yes)')
     parser.add_argument('--seq_length', type=int, default=35, help='number of timesteps to unroll for')
